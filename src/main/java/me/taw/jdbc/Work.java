@@ -14,6 +14,10 @@ public class Work {
 
     public void start()
     {
+        //没有测试
+        //Student student = jdbcTemplate.queryForObject("SELECT * FROM STUDENT WHERE ID = ?", new BeanPropertyRowMapper<Student>(Student.class), 1L);
+        //System.out.println("id:" + student.getId() + ",name:" + student.getName());
+
         String sql = "select * from ecm_address WHERE print_addr = '' ";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
 //        System.out.println(maps);
